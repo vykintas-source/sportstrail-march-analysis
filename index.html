@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SportsTrail | March 2025 vs 2026 Analysis</title>
+<title>SportsTrail | March 2025 vs 2026 Product Analysis</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -71,7 +71,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Section */
 .section {
   margin-bottom: 48px;
 }
@@ -99,7 +98,6 @@ body {
   margin-top: 24px;
 }
 
-/* Metric grid */
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -137,7 +135,6 @@ body {
 .metric-card .change.down { color: var(--red); }
 .metric-card .change.neutral { color: var(--text-tertiary); }
 
-/* Comparison table */
 .comp-table {
   width: 100%;
   border-collapse: collapse;
@@ -178,7 +175,6 @@ body {
 .comp-table .positive { color: var(--green); }
 .comp-table .negative { color: var(--red); }
 
-/* Highlight box */
 .highlight {
   border-radius: 8px;
   padding: 20px 24px;
@@ -208,7 +204,6 @@ body {
   color: var(--text);
 }
 
-/* Prose */
 .prose {
   font-size: 14px;
   color: var(--text-secondary);
@@ -221,7 +216,6 @@ body {
   font-weight: 600;
 }
 
-/* Variation block */
 .var-block {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -253,14 +247,12 @@ body {
   border-radius: 4px;
 }
 
-/* Divider */
 .divider {
   border: none;
   border-top: 1px solid var(--border);
   margin: 40px 0;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 32px 0 16px;
@@ -275,7 +267,6 @@ body {
   font-size: 11px;
 }
 
-/* Responsive */
 @media (max-width: 700px) {
   .metric-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -286,25 +277,24 @@ body {
 
 <div class="header">
   <h1>SportsTrail | US</h1>
-  <div class="subtitle">Deep Product Analysis: March 2025 vs March 2026</div>
+  <div class="subtitle">In-depth product analysis: March 2025 vs March 2026</div>
   <div class="date-badge">2026-03-23 &middot; 22 days vs full month</div>
 </div>
 
-<!-- ======== 1. OVERVIEW ======== -->
 <div class="section">
   <div class="section-number">01 / Overview</div>
   <h2>March 2026 already exceeds last year's pace</h2>
 
-  <p class="prose">In 22 days, we reached <strong>$181,486</strong> in sales (full March 2025: $149,094). The daily average is <strong>71.5% higher</strong> than last year, and profit is growing even faster at <strong>+108%</strong> per day. Projected for the full month: ~$256K in sales and ~$91K in profit.</p>
+  <p class="prose">In 22 days we reached <strong>$181 486</strong> in sales (2025 full March: $149 094). Daily average is <strong>71.5% higher</strong> than last year, while profit is growing even faster - <strong>+108%</strong> on a daily basis. Projected for the full month: ~$256K in sales and ~$91K in profit.</p>
 
   <div class="metric-grid">
     <div class="metric-card">
-      <div class="label">Daily Revenue</div>
+      <div class="label">Daily revenue</div>
       <div class="value">$8 249</div>
       <div class="change up">+71.5% vs $4 809</div>
     </div>
     <div class="metric-card">
-      <div class="label">Daily Profit</div>
+      <div class="label">Daily profit</div>
       <div class="value">$2 938</div>
       <div class="change up">+108% vs $1 411</div>
     </div>
@@ -322,12 +312,12 @@ body {
 
   <div class="metric-grid">
     <div class="metric-card">
-      <div class="label">Conversion Rate</div>
+      <div class="label">Conversion rate</div>
       <div class="value">13.2%</div>
       <div class="change up">vs 9.0% last year</div>
     </div>
     <div class="metric-card">
-      <div class="label">Avg. Price/Unit</div>
+      <div class="label">Avg price/unit</div>
       <div class="value">$17.31</div>
       <div class="change up">+$1.72 vs $15.59</div>
     </div>
@@ -337,7 +327,7 @@ body {
       <div class="change down">-25% vs 106 102</div>
     </div>
     <div class="metric-card">
-      <div class="label">Ad Efficiency</div>
+      <div class="label">Ad efficiency</div>
       <div class="value">$0.43</div>
       <div class="change up">$0.43 vs $0.71 / $1 profit</div>
     </div>
@@ -346,64 +336,68 @@ body {
 
 <hr class="divider">
 
-<!-- ======== 2. CONVERSION ======== -->
 <div class="section">
-  <div class="section-number">02 / Primary Growth Driver</div>
-  <h2>Conversion rate surge across the entire portfolio</h2>
+  <div class="section-number">02 / Key growth driver</div>
+  <h2>Conversion rate jump across the entire portfolio</h2>
 
   <div class="highlight green">
-    <div class="hl-title">Conversion jumped from 9.0% to 13.2% - the single biggest change</div>
-    <p>Fewer sessions (79K vs 106K), yet more sales. Traffic quality is higher, listings convert better, or both. This is "free" growth - more sales with lower ad spend.</p>
+    <div class="hl-title">Conversion increased from 9.0% to 13.2% - the single biggest change</div>
+    <p>Fewer sessions (79K vs 106K), but more sales. Traffic is higher quality, listings convert better, or both. This is "free" growth - more sales with lower ad spend.</p>
   </div>
 
   <h3>Conversion changes by product</h3>
-  <table class="comp-table">
+  <div style="overflow-x: auto;">
+  <table class="comp-table" style="min-width: 820px;">
     <thead>
       <tr>
         <th>ASIN</th>
         <th>Price</th>
+        <th>Sales 2025</th>
+        <th>% total</th>
         <th>Conv 2025</th>
+        <th>Sales 2026</th>
+        <th>% total</th>
         <th>Conv 2026</th>
-        <th>Change</th>
+        <th>Conv &#916;</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>B08563LXG8</td><td>$19.99</td><td>11.2%</td><td>26.7%</td><td class="positive">+15.5 p.p.</td></tr>
-      <tr><td>B0BWV95XPC</td><td>$25.99</td><td>10.2%</td><td>20.4%</td><td class="positive">+10.3 p.p.</td></tr>
-      <tr><td>B0BWV8FKCM</td><td>$25.99</td><td>12.3%</td><td>21.0%</td><td class="positive">+8.7 p.p.</td></tr>
-      <tr><td>B0BWV68VZ3</td><td>$15.99</td><td>17.1%</td><td>24.4%</td><td class="positive">+7.2 p.p.</td></tr>
-      <tr><td>D1KGW8PY (NS)</td><td>$23.74</td><td>11.0%</td><td>18.0%</td><td class="positive">+7.0 p.p.</td></tr>
-      <tr><td>B0856336QH</td><td>$15.99</td><td>11.3%</td><td>17.3%</td><td class="positive">+6.0 p.p.</td></tr>
-      <tr><td>D1KJV49G (NS)</td><td>$24.99</td><td>15.1%</td><td>20.6%</td><td class="positive">+5.5 p.p.</td></tr>
-      <tr><td>B0BWV7B418</td><td>$19.99</td><td>18.2%</td><td>20.8%</td><td class="positive">+2.6 p.p.</td></tr>
+      <tr><td>B08563LXG8</td><td>$19.99</td><td>$3 421</td><td>2.3%</td><td>11.2%</td><td>$4 878</td><td>2.7%</td><td>26.7%</td><td class="positive">+15.5 p.p.</td></tr>
+      <tr><td>B0BWV95XPC</td><td>$25.99</td><td>$2 236</td><td>1.5%</td><td>10.2%</td><td>$4 208</td><td>2.3%</td><td>20.4%</td><td class="positive">+10.3 p.p.</td></tr>
+      <tr><td>B0BWV8FKCM</td><td>$25.99</td><td>$2 077</td><td>1.4%</td><td>12.3%</td><td>$4 098</td><td>2.3%</td><td>21.0%</td><td class="positive">+8.7 p.p.</td></tr>
+      <tr><td>B0BWV68VZ3</td><td>$15.99</td><td>$8 047</td><td>5.4%</td><td>17.1%</td><td>$18 772</td><td>10.3%</td><td>24.4%</td><td class="positive">+7.2 p.p.</td></tr>
+      <tr><td>D1KGW8PY (NS)</td><td>$23.74</td><td>$4 629</td><td>3.1%</td><td>11.0%</td><td>$5 995</td><td>3.3%</td><td>18.0%</td><td class="positive">+7.0 p.p.</td></tr>
+      <tr><td>B0856336QH</td><td>$15.99</td><td>$7 621</td><td>5.1%</td><td>11.3%</td><td>$5 533</td><td>3.0%</td><td>17.3%</td><td class="positive">+6.0 p.p.</td></tr>
+      <tr><td>D1KJV49G (NS)</td><td>$24.99</td><td>$4 047</td><td>2.7%</td><td>15.1%</td><td>$7 638</td><td>4.2%</td><td>20.6%</td><td class="positive">+5.5 p.p.</td></tr>
+      <tr><td>B0BWV7B418</td><td>$19.99</td><td>$4 584</td><td>3.1%</td><td>18.2%</td><td>$9 951</td><td>5.5%</td><td>20.8%</td><td class="positive">+2.6 p.p.</td></tr>
     </tbody>
   </table>
+  </div>
 
   <p class="prose">Virtually <strong>every product</strong> in the portfolio converts better than last year. The strongest improvement is in the $19.99 and $25.99 segments - the highest-priced regular products that generate the best margins.</p>
 </div>
 
 <hr class="divider">
 
-<!-- ======== 3. HERO STRATEGY ======== -->
 <div class="section">
-  <div class="section-number">03 / Hero Strategy</div>
+  <div class="section-number">03 / Hero strategy</div>
   <h2>Variation-level analysis</h2>
 
-  <p class="prose">ASIN-level product analysis can be misleading because SportsTrail uses a <strong>Hero strategy</strong> - ad spend is concentrated on a few key ASINs (heroes) that drive traffic to the entire variation. Shoppers land on the hero ASIN but purchase other child ASINs. As a result, the hero ASIN appears unprofitable even though the variation as a whole is profitable.</p>
+  <p class="prose">Analyzing performance at the ASIN level is misleading because SportsTrail uses a <strong>Hero strategy</strong> - ad spend is concentrated on a few key ASINs (heroes) that drive traffic to the entire variation. Shoppers arrive through the hero ASIN but purchase other children. This makes the hero ASIN appear unprofitable, even though the entire variation generates profit.</p>
 
   <div class="var-block">
     <div class="var-header">
-      <div class="var-title">Regular Variation (Hero Listing)</div>
+      <div class="var-title">Regular variation (Hero listing)</div>
       <div class="var-tag">Margin +9.7 p.p.</div>
     </div>
     <div class="metric-grid">
       <div class="metric-card">
-        <div class="label">Daily Revenue</div>
+        <div class="label">Daily revenue</div>
         <div class="value">$5 663</div>
         <div class="change up">+74% vs $3 254</div>
       </div>
       <div class="metric-card">
-        <div class="label">Variation Margin</div>
+        <div class="label">Variation margin</div>
         <div class="value">27.9%</div>
         <div class="change up">+9.7 p.p. vs 18.2%</div>
       </div>
@@ -413,7 +407,7 @@ body {
         <div class="change up">-8.8 p.p. vs 30.0%</div>
       </div>
       <div class="metric-card">
-        <div class="label">Daily Profit</div>
+        <div class="label">Daily profit</div>
         <div class="value">$1 578</div>
         <div class="change up">+166% vs $592</div>
       </div>
@@ -460,17 +454,17 @@ body {
 
   <div class="var-block">
     <div class="var-header">
-      <div class="var-title">Non-Slip Variation</div>
+      <div class="var-title">Non-Slip variation</div>
       <div class="var-tag">Margin 53.7%</div>
     </div>
     <div class="metric-grid">
       <div class="metric-card">
-        <div class="label">Daily Revenue</div>
+        <div class="label">Daily revenue</div>
         <div class="value">$2 586</div>
         <div class="change up">+66% vs $1 556</div>
       </div>
       <div class="metric-card">
-        <div class="label">Variation Margin</div>
+        <div class="label">Variation margin</div>
         <div class="value">53.7%</div>
         <div class="change up">+1.1 p.p. vs 52.6%</div>
       </div>
@@ -480,21 +474,20 @@ body {
         <div class="change neutral">~stable vs 1.6%</div>
       </div>
       <div class="metric-card">
-        <div class="label">Daily Profit</div>
+        <div class="label">Daily profit</div>
         <div class="value">$1 388</div>
         <div class="change up">+70% vs $818</div>
       </div>
     </div>
 
-    <p class="prose" style="margin-top: 12px;">Non-Slip receives virtually no ad spend (1.7% TACoS) yet is growing organically at +66%. It is the profit foundation: <strong>29 products with sales</strong> (up from 15 last year), average price $21.73 (was $19.84). Non-Slip now accounts for 47% of total portfolio profit.</p>
+    <p class="prose" style="margin-top: 12px;">Non-Slip requires virtually no advertising (1.7% TACoS) yet grows organically at +66%. It is the profit foundation: <strong>29 products with sales</strong> (up from 15 last year), average price $21.73 (up from $19.84). Non-Slip now accounts for 47% of total portfolio profit.</p>
   </div>
 </div>
 
 <hr class="divider">
 
-<!-- ======== 4. PRICE SEGMENTS ======== -->
 <div class="section">
-  <div class="section-number">04 / Price Segments</div>
+  <div class="section-number">04 / Price segments</div>
   <h2>Where profit is generated</h2>
 
   <table class="comp-table">
@@ -505,7 +498,7 @@ body {
         <th>Margin 2025</th>
         <th>Sales 2026</th>
         <th>Margin 2026</th>
-        <th>Margin Δ</th>
+        <th>Margin &#916;</th>
       </tr>
     </thead>
     <tbody>
@@ -554,39 +547,37 @@ body {
 
   <div class="highlight green">
     <div class="hl-title">$15.99 segment - the biggest winner</div>
-    <p>In just 22 days, sales (<span class="hl-stat">$47,348</span>) already exceed the full March 2025 level ($39,455). Ad spend was cut in half: from $9,514 to $4,721. Margin rose from 22.2% to 37.7%. These products convert significantly better organically and require far less advertising.</p>
+    <p>In just 22 days, sales (<span class="hl-stat">$47 348</span>) already exceed the full March 2025 level ($39 455). Ad spend was cut in half: from $9 514 to $4 721. Margin jumped from 22.2% to 37.7%. These products convert significantly better organically and require less advertising.</p>
   </div>
 
   <div class="highlight green">
     <div class="hl-title">$19.99 segment growing strongly</div>
-    <p>In 22 days (<span class="hl-stat">$34,659</span>), sales already surpass full March 2025 ($20,467). Margin is also higher: 29.6% vs 22.4%. Standout performer B0BWV7B418 with sales +117% and 45.0% margin.</p>
+    <p>In 22 days (<span class="hl-stat">$34 659</span>) already exceeds full March 2025 ($20 467). Margin is also higher: 29.6% vs 22.4%. B0BWV7B418 stands out particularly - sales +117%, margin 45.0%.</p>
   </div>
 </div>
 
 <hr class="divider">
 
-<!-- ======== 5. STAR PRODUCT ======== -->
 <div class="section">
-  <div class="section-number">05 / Star Product</div>
-  <h2>B0BWV68VZ3 ($15.99) - the growth engine</h2>
+  <div class="section-number">05 / Star product</div>
+  <h2>B0BWV68VZ3 ($15.99) - growth engine</h2>
 
   <div class="highlight blue">
-    <div class="hl-title">Largest sales growth in the portfolio</div>
-    <p>Sales: <span class="hl-stat">$8,047 → $18,772 (+133%)</span>, and that is only 22 days. Conversion: 17.1% → 24.4%. Margin: 29.4% → 36.4%. Sessions: 3,098 → 4,822. Ad spend increased by just $820 ($1,442 → $2,261), but sales grew by $10,700. This indicates the product has gained organic momentum.</p>
+    <div class="hl-title">Largest sales increase in the portfolio</div>
+    <p>Sales: <span class="hl-stat">$8 047 &#8594; $18 772 (+133%)</span>, and that is only in 22 days. Conversion: 17.1% &#8594; 24.4%. Margin: 29.4% &#8594; 36.4%. Sessions: 3 098 &#8594; 4 822. Ad spend increased by only $820 ($1 442 &#8594; $2 261), but sales grew by $10 700. This indicates the product is gaining organic traction.</p>
   </div>
 </div>
 
 <hr class="divider">
 
-<!-- ======== 6. AD STRUCTURE ======== -->
 <div class="section">
-  <div class="section-number">06 / Ad Structure</div>
-  <h2>Changes in ad spend allocation</h2>
+  <div class="section-number">06 / Ad structure</div>
+  <h2>Shift in ad spend allocation</h2>
 
   <table class="comp-table">
     <thead>
       <tr>
-        <th>Ad Type</th>
+        <th>Ad type</th>
         <th>2025</th>
         <th>2026</th>
         <th>Change</th>
@@ -609,7 +600,7 @@ body {
         <td>Sponsored Brands</td>
         <td>$59</td>
         <td>$2 411</td>
-        <td>+4,000%</td>
+        <td>+4 000%</td>
       </tr>
       <tr>
         <td>SB Video</td>
@@ -626,34 +617,33 @@ body {
     </tbody>
   </table>
 
-  <p class="prose">The ad structure has shifted: Sponsored Products spend decreased, but a <strong>significant Sponsored Brands budget ($2,411)</strong> has been introduced where virtually none existed before. This is brand awareness advertising that likely contributes to the higher conversion rate across the entire portfolio.</p>
+  <p class="prose">The ad structure has shifted: Sponsored Products decreased, but a <strong>significant Sponsored Brands budget ($2 411)</strong> was introduced, which was virtually non-existent last year. This is brand awareness-type advertising that may be contributing to the higher conversion rates across the portfolio.</p>
 </div>
 
 <hr class="divider">
 
-<!-- ======== 7. CONCLUSIONS ======== -->
 <div class="section">
-  <div class="section-number">07 / Conclusions & Opportunities</div>
-  <h2>What is working and where to improve</h2>
+  <div class="section-number">07 / Conclusions and opportunities</div>
+  <h2>What works and where to improve</h2>
 
   <div class="highlight green">
     <div class="hl-title">What is working well</div>
-    <p><strong>1. Conversion is the primary growth driver.</strong> Not more traffic, not more ad spend - simply better-converting listings. Portfolio-wide conversion rose from 9.0% to 13.2%.</p>
-    <p style="margin-top: 8px;"><strong>2. Hero strategy concentration is paying off.</strong> At the variation level: daily profit +166%, TACoS -8.8 p.p., every $1 of ad spend now generates $2.33 in profit (was $1.41).</p>
-    <p style="margin-top: 8px;"><strong>3. Shoppers are choosing higher-priced products.</strong> Average price per unit rose from $15.59 to $17.31. The $15.99 and $19.99 segments are growing fastest and most profitably.</p>
-    <p style="margin-top: 8px;"><strong>4. Non-Slip is the profit foundation.</strong> 53.7% margin, 1.7% TACoS, +66% daily revenue growth. Accounts for 47% of total portfolio profit with minimal ad spend.</p>
+    <p><strong>1. Conversion is the primary growth driver.</strong> Not more traffic, not more ad spend - simply better-converting listings. Portfolio-wide conversion increased from 9.0% to 13.2%.</p>
+    <p style="margin-top: 8px;"><strong>2. Hero strategy concentration is paying off.</strong> At the full variation level: daily profit +166%, TACoS -8.8 p.p., every $1 of ad spend now generates $2.33 in profit (was $1.41).</p>
+    <p style="margin-top: 8px;"><strong>3. Customers are choosing higher-priced products.</strong> Average price per unit increased from $15.59 to $17.31. The $15.99 and $19.99 segments are growing fastest and most profitably.</p>
+    <p style="margin-top: 8px;"><strong>4. Non-Slip is the profit foundation.</strong> 53.7% margin, 1.7% TACoS, +66% daily revenue growth. It accounts for 47% of total portfolio profit with minimal advertising.</p>
   </div>
 
   <div class="highlight amber">
     <div class="hl-title">Where to improve</div>
-    <p><strong>1. B08HNC4881 ($19.99)</strong> - $4,673 in ad spend over 22 days, but only 3.4% margin (ACoS 49%). If this ASIN is not serving as a hero in its variation, this is potentially ~$4K that could be reallocated more efficiently.</p>
-    <p style="margin-top: 8px;"><strong>2. B07C4YJYY2 ($10.99)</strong> - formerly the second hero, ad spend has been reduced, but margin is still -0.3%. Worth evaluating whether it still serves a hero function or if the budget can be further consolidated into the primary hero.</p>
-    <p style="margin-top: 8px;"><strong>3. 4 new ASINs ($19.99, "Name not found")</strong> - B0F6D7NR7J, B0F6D7W9B9, B0F6D92MGD, B0F6DCDPMR. Ad spend $591, sales $0. If these are new product launches, progress needs to be monitored.</p>
+    <p><strong>1. B08HNC4881 ($19.99)</strong> - $4 673 in ad spend over 22d, but only 3.4% margin (ACOS 49%). If this ASIN is not a hero in its variation - that is potentially ~$4K that could be reallocated more efficiently.</p>
+    <p style="margin-top: 8px;"><strong>2. B07C4YJYY2 ($10.99)</strong> - former second hero, ad spend now reduced, but margin is still -0.3%. Worth evaluating whether it still serves a hero function, or if the budget can be further consolidated into the primary hero.</p>
+    <p style="margin-top: 8px;"><strong>3. 4 new ASINs ($19.99, "Name not found")</strong> - B0F6D7NR7J, B0F6D7W9B9, B0F6D92MGD, B0F6DCDPMR. Ad spend of $591, zero sales. If this is a new product launch - progress should be monitored.</p>
   </div>
 
   <div class="highlight blue">
     <div class="hl-title">Key takeaway</div>
-    <p>March 2026 demonstrates a fundamental efficiency improvement: <strong>-25% sessions, -10% ad spend, yet +71% revenue and +108% profit</strong>. This is not a seasonal or market effect - it is the result of portfolio optimization and the Hero strategy. Every ad dollar now works 39% more efficiently than last year.</p>
+    <p>March 2026 demonstrates a fundamental efficiency improvement: <strong>-25% sessions, -10% ad spend, yet +71% revenue and +108% profit</strong>. This is not a seasonal or market effect - it is the result of portfolio optimization and Hero strategy execution. Every ad dollar now works 39% more efficiently than last year.</p>
   </div>
 </div>
 
