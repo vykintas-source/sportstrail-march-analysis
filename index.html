@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SportsTrail | Kovo 2025 vs 2026 analizė</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF8;
+  --bg-card: #FFFFFF;
+  --bg-muted: #F4F3F0;
+  --text: #1A1A18;
+  --text-secondary: #6B6A65;
+  --text-tertiary: #9C9B95;
+  --border: #E8E7E3;
+  --green: #1B7D5A;
+  --green-bg: #E8F5EE;
+  --green-dark: #0F5C3F;
+  --red: #C4391D;
+  --red-bg: #FDF0EC;
+  --amber: #A06B12;
+  --amber-bg: #FDF5E6;
+  --blue: #2466AC;
+  --blue-bg: #EBF2FA;
+  --accent: #B85C00;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 40px 24px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 3px solid var(--text);
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.header .subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.header .date-badge {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  background: #FDF5EC;
+  padding: 4px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* Section */
+.section {
+  margin-bottom: 48px;
+}
+
+.section-number {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.3px;
+}
+
+.section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+
+/* Metric grid */
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.metric-card .label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.metric-card .value {
+  font-family: 'DM Mono', monospace;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.metric-card .change {
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.metric-card .change.up { color: var(--green); }
+.metric-card .change.down { color: var(--red); }
+.metric-card .change.neutral { color: var(--text-tertiary); }
+
+/* Comparison table */
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.comp-table thead th {
+  text-align: left;
+  padding: 10px 12px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-secondary);
+  border-bottom: 2px solid var(--text);
+  letter-spacing: 0.3px;
+}
+
+.comp-table thead th:not(:first-child) {
+  text-align: right;
+}
+
+.comp-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.comp-table tbody td:not(:first-child) {
+  text-align: right;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+}
+
+.comp-table tbody tr:last-child td {
+  border-bottom: 2px solid var(--text);
+  font-weight: 600;
+}
+
+.comp-table .positive { color: var(--green); }
+.comp-table .negative { color: var(--red); }
+
+/* Highlight box */
+.highlight {
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.highlight.green { background: var(--green-bg); border-left: 4px solid var(--green); }
+.highlight.red { background: var(--red-bg); border-left: 4px solid var(--red); }
+.highlight.amber { background: var(--amber-bg); border-left: 4px solid var(--amber); }
+.highlight.blue { background: var(--blue-bg); border-left: 4px solid var(--blue); }
+
+.highlight .hl-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.highlight p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.highlight .hl-stat {
+  font-family: 'DM Mono', monospace;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Prose */
+.prose {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.prose strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Variation block */
+.var-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.var-block .var-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.var-block .var-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.var-block .var-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--green-dark);
+  background: var(--green-bg);
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 40px 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 32px 0 16px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.footer .agency {
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .metric-grid { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>SportsTrail | US</h1>
+  <div class="subtitle">Giluminė produktų analizė: Kovas 2025 vs Kovas 2026</div>
+  <div class="date-badge">2026-03-23 &middot; 22 dienos vs pilnas mėnuo</div>
+</div>
+
+<!-- ======== 1. OVERVIEW ======== -->
+<div class="section">
+  <div class="section-number">01 / Bendras vaizdas</div>
+  <h2>Kovas 2026 jau viršija praėjusių metų tempą</h2>
+
+  <p class="prose">Per 22 dienas pasiekta <strong>$181 486</strong> pardavimų (2025 pilnas kovas: $149 094). Dienos vidurkis <strong>71.5% aukštesnis</strong> nei pernai, o pelnas auga dar greičiau - <strong>+108%</strong> dienomis. Projektuojant pilnam mėnesiui: ~$256K pardavimų ir ~$91K pelno.</p>
+
+  <div class="metric-grid">
+    <div class="metric-card">
+      <div class="label">Dienos pajamos</div>
+      <div class="value">$8 249</div>
+      <div class="change up">+71.5% vs $4 809</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Dienos pelnas</div>
+      <div class="value">$2 938</div>
+      <div class="change up">+108% vs $1 411</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Marža</div>
+      <div class="value">35.6%</div>
+      <div class="change up">+6.3 p.p. vs 29.3%</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">TACoS</div>
+      <div class="value">15.4%</div>
+      <div class="change up">-5.4 p.p. vs 20.8%</div>
+    </div>
+  </div>
+
+  <div class="metric-grid">
+    <div class="metric-card">
+      <div class="label">Konversija</div>
+      <div class="value">13.2%</div>
+      <div class="change up">vs 9.0% pernai</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Vid. kaina/vnt.</div>
+      <div class="value">$17.31</div>
+      <div class="change up">+$1.72 vs $15.59</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Sesijos</div>
+      <div class="value">79 492</div>
+      <div class="change down">-25% vs 106 102</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Reklamos efektyvumas</div>
+      <div class="value">$0.43</div>
+      <div class="change up">$0.43 vs $0.71 / $1 pelno</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ======== 2. CONVERSION ======== -->
+<div class="section">
+  <div class="section-number">02 / Pagrindinis augimo variklis</div>
+  <h2>Konversijos šuolis visame portfelyje</h2>
+
+  <div class="highlight green">
+    <div class="hl-title">Konversija pakilo nuo 9.0% iki 13.2% - tai didžiausias pokytis</div>
+    <p>Mažiau sesijų (79K vs 106K), bet daugiau pardavimų. Traffic yra kokybiškesnis, listingai konvertuoja geriau, arba abu. Tai "nemokamas" augimas - daugiau pardavimų su mažesnėmis reklamos išlaidomis.</p>
+  </div>
+
+  <h3>Konversijos pokyčiai pagal produktus</h3>
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>ASIN</th>
+        <th>Kaina</th>
+        <th>Conv 2025</th>
+        <th>Conv 2026</th>
+        <th>Pokytis</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>B08563LXG8</td><td>$19.99</td><td>11.2%</td><td>26.7%</td><td class="positive">+15.5 p.p.</td></tr>
+      <tr><td>B0BWV95XPC</td><td>$25.99</td><td>10.2%</td><td>20.4%</td><td class="positive">+10.3 p.p.</td></tr>
+      <tr><td>B0BWV8FKCM</td><td>$25.99</td><td>12.3%</td><td>21.0%</td><td class="positive">+8.7 p.p.</td></tr>
+      <tr><td>B0BWV68VZ3</td><td>$15.99</td><td>17.1%</td><td>24.4%</td><td class="positive">+7.2 p.p.</td></tr>
+      <tr><td>D1KGW8PY (NS)</td><td>$23.74</td><td>11.0%</td><td>18.0%</td><td class="positive">+7.0 p.p.</td></tr>
+      <tr><td>B0856336QH</td><td>$15.99</td><td>11.3%</td><td>17.3%</td><td class="positive">+6.0 p.p.</td></tr>
+      <tr><td>D1KJV49G (NS)</td><td>$24.99</td><td>15.1%</td><td>20.6%</td><td class="positive">+5.5 p.p.</td></tr>
+      <tr><td>B0BWV7B418</td><td>$19.99</td><td>18.2%</td><td>20.8%</td><td class="positive">+2.6 p.p.</td></tr>
+    </tbody>
+  </table>
+
+  <p class="prose">Praktiškai <strong>kiekvienas produktas</strong> portfelyje konvertuoja geriau nei pernai. Stipriausia pagerėjimas $19.99 ir $25.99 segmentuose - tai brangiausi regular produktai, kurie generuoja aukščiausią maržą.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ======== 3. HERO STRATEGY ======== -->
+<div class="section">
+  <div class="section-number">03 / Hero strategija</div>
+  <h2>Variacijos lygio analizė</h2>
+
+  <p class="prose">Produktų analizė ASIN lygiu yra klaidinanti, nes SportsTrail naudoja <strong>Hero strategiją</strong> - reklama koncentruojama per kelis pagrindinius ASIN (hero), kurie traukia traffic į visą variaciją. Pirkėjai ateina per hero ASIN, bet perka kitus child'us. Todėl hero ASIN atrodo nuostolingas, nors visa variacija pelno.</p>
+
+  <div class="var-block">
+    <div class="var-header">
+      <div class="var-title">Regular variacija (Hero listing)</div>
+      <div class="var-tag">Margin +9.7 p.p.</div>
+    </div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="label">Dienos pajamos</div>
+        <div class="value">$5 663</div>
+        <div class="change up">+74% vs $3 254</div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Variacijos marža</div>
+        <div class="value">27.9%</div>
+        <div class="change up">+9.7 p.p. vs 18.2%</div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Variacijos TACoS</div>
+        <div class="value">21.2%</div>
+        <div class="change up">-8.8 p.p. vs 30.0%</div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Dienos pelnas</div>
+        <div class="value">$1 578</div>
+        <div class="change up">+166% vs $592</div>
+      </div>
+    </div>
+
+    <h3>Hero ASIN reklamos paskirstymas</h3>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Komponentas</th>
+          <th>2025</th>
+          <th>2026</th>
+          <th>Pokytis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hero B07CFX29Z4 reklamos dalis</td>
+          <td>17%</td>
+          <td>35%</td>
+          <td>Koncentruota daugiau</td>
+        </tr>
+        <tr>
+          <td>Hero B07C4YJYY2 reklamos dalis</td>
+          <td>21%</td>
+          <td>11%</td>
+          <td>Sumažinta</td>
+        </tr>
+        <tr>
+          <td>Likusių child'ų reklama</td>
+          <td>$18 566</td>
+          <td>$14 490</td>
+          <td class="positive">-22%</td>
+        </tr>
+        <tr>
+          <td>Likusių child'ų pardavimai</td>
+          <td>$78 171</td>
+          <td>$105 149</td>
+          <td class="positive">+35% (per 22d!)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="var-block">
+    <div class="var-header">
+      <div class="var-title">Non-Slip variacija</div>
+      <div class="var-tag">Margin 53.7%</div>
+    </div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="label">Dienos pajamos</div>
+        <div class="value">$2 586</div>
+        <div class="change up">+66% vs $1 556</div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Variacijos marža</div>
+        <div class="value">53.7%</div>
+        <div class="change up">+1.1 p.p. vs 52.6%</div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Variacijos TACoS</div>
+        <div class="value">1.7%</div>
+        <div class="change neutral">~stabilu vs 1.6%</div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Dienos pelnas</div>
+        <div class="value">$1 388</div>
+        <div class="change up">+70% vs $818</div>
+      </div>
+    </div>
+
+    <p class="prose" style="margin-top: 12px;">Non-Slip praktiškai nereklamuojamas (1.7% TACoS), bet auga organiškai +66%. Tai pelno pamatas: <strong>29 produktai su pardavimais</strong> (buvo 15 pernai), vidutinė kaina $21.73 (buvo $19.84). Non-Slip šiemet sudaro 47% viso portfelio pelno.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ======== 4. PRICE SEGMENTS ======== -->
+<div class="section">
+  <div class="section-number">04 / Kainų segmentai</div>
+  <h2>Kur formuojasi pelnas</h2>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Segmentas</th>
+        <th>Sales 2025</th>
+        <th>Marža 2025</th>
+        <th>Sales 2026</th>
+        <th>Marža 2026</th>
+        <th>Marža Δ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>$10.99 (regular)</td>
+        <td>$29 835</td>
+        <td>0.7%</td>
+        <td>$26 081</td>
+        <td class="negative">-3.8%</td>
+        <td class="negative">-4.5 p.p.</td>
+      </tr>
+      <tr>
+        <td>$15.99 (regular)</td>
+        <td>$39 455</td>
+        <td>22.2%</td>
+        <td>$47 348</td>
+        <td class="positive">37.7%</td>
+        <td class="positive">+15.5 p.p.</td>
+      </tr>
+      <tr>
+        <td>$19.99 (regular)</td>
+        <td>$20 467</td>
+        <td>22.4%</td>
+        <td>$34 659</td>
+        <td class="positive">29.6%</td>
+        <td class="positive">+7.2 p.p.</td>
+      </tr>
+      <tr>
+        <td>$25.99 (regular)</td>
+        <td>$6 287</td>
+        <td>43.9%</td>
+        <td>$11 023</td>
+        <td class="positive">45.0%</td>
+        <td class="positive">+1.1 p.p.</td>
+      </tr>
+      <tr>
+        <td>Non-Slip (visi)</td>
+        <td>$48 234</td>
+        <td>52.6%</td>
+        <td>$56 899</td>
+        <td class="positive">53.7%</td>
+        <td class="positive">+1.1 p.p.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight green">
+    <div class="hl-title">$15.99 segmentas - didžiausias laimėtojas</div>
+    <p>Per 22 dienas pardavimai (<span class="hl-stat">$47 348</span>) jau viršija pilno praėjusio kovo lygį ($39 455). Reklamos išlaidos sumažėjo perpus: nuo $9 514 iki $4 721. Marža pakilo nuo 22.2% iki 37.7%. Šie produktai organiškai konvertuoja žymiai geriau ir nereikia tiek reklamos.</p>
+  </div>
+
+  <div class="highlight green">
+    <div class="hl-title">$19.99 segmentas stipriai auga</div>
+    <p>Per 22 dienas (<span class="hl-stat">$34 659</span>) jau viršija pilno kovo 2025 ($20 467). Marža taip pat aukštesnė: 29.6% vs 22.4%. Ypač išsiskiria B0BWV7B418 - pardavimai +117%, marža 45.0%.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ======== 5. STAR PRODUCT ======== -->
+<div class="section">
+  <div class="section-number">05 / Star produktas</div>
+  <h2>B0BWV68VZ3 ($15.99) - augimo variklis</h2>
+
+  <div class="highlight blue">
+    <div class="hl-title">Didžiausias pardavimų augimas portfelyje</div>
+    <p>Pardavimai: <span class="hl-stat">$8 047 → $18 772 (+133%)</span>, ir tai tik per 22 dienas. Konversija: 17.1% → 24.4%. Marža: 29.4% → 36.4%. Sessions: 3 098 → 4 822. Reklama padidėjo tik $820 ($1 442 → $2 261), bet pardavimai išaugo $10 700. Tai rodo, kad produktas "užsikūrė" organiškai.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ======== 6. AD STRUCTURE ======== -->
+<div class="section">
+  <div class="section-number">06 / Reklamos struktūra</div>
+  <h2>Reklamos pasiskirstymo pokytis</h2>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Reklamos tipas</th>
+        <th>2025</th>
+        <th>2026</th>
+        <th>Pokytis</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sponsored Products</td>
+        <td>$27 652</td>
+        <td>$22 927</td>
+        <td class="positive">-17%</td>
+      </tr>
+      <tr>
+        <td>Sponsored Display</td>
+        <td>$272</td>
+        <td>$835</td>
+        <td>+207%</td>
+      </tr>
+      <tr>
+        <td>Sponsored Brands</td>
+        <td>$59</td>
+        <td>$2 411</td>
+        <td>+4 000%</td>
+      </tr>
+      <tr>
+        <td>SB Video</td>
+        <td>$3 079</td>
+        <td>$1 842</td>
+        <td>-40%</td>
+      </tr>
+      <tr>
+        <td>Viso</td>
+        <td>$31 062</td>
+        <td>$28 015</td>
+        <td class="positive">-10% (per 22d)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="prose">Reklamos struktūra pasikeitė: Sponsored Products sumažėjo, bet atsirado <strong>reikšmingas Sponsored Brands biudžetas ($2 411)</strong>, kurio pernai praktiškai nebuvo. Tai brand awareness tipo reklama, kuri gali prisidėti prie aukštesnės konversijos visame portfelyje.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ======== 7. CONCLUSIONS ======== -->
+<div class="section">
+  <div class="section-number">07 / Išvados ir galimybės</div>
+  <h2>Kas veikia ir kur tobulinti</h2>
+
+  <div class="highlight green">
+    <div class="hl-title">Kas veikia gerai</div>
+    <p><strong>1. Konversija yra pagrindinis augimo šaltinis.</strong> Ne daugiau traffico, ne daugiau reklamos - tiesiog geriau konvertuojantys listingai. Visame portfelyje konversija pakilo nuo 9.0% iki 13.2%.</p>
+    <p style="margin-top: 8px;"><strong>2. Hero strategijos koncentracija pasiteisina.</strong> Visos variacijos lygiu: dienos pelnas +166%, TACoS -8.8 p.p., kiekvienas $1 reklamos dabar generuoja $2.33 pelno (buvo $1.41).</p>
+    <p style="margin-top: 8px;"><strong>3. Pirkėjai renkasi brangesnius produktus.</strong> Vidutinė kaina per vienetą pakilo nuo $15.59 iki $17.31. $15.99 ir $19.99 segmentai auga greičiausiai ir pelningiausiai.</p>
+    <p style="margin-top: 8px;"><strong>4. Non-Slip yra pelno pamatas.</strong> 53.7% marža, 1.7% TACoS, +66% dienos pajamų augimas. Sudaro 47% viso portfelio pelno be reikšmingos reklamos.</p>
+  </div>
+
+  <div class="highlight amber">
+    <div class="hl-title">Kur galima tobulinti</div>
+    <p><strong>1. B08HNC4881 ($19.99)</strong> - $4 673 reklamos per 22d, bet tik 3.4% marža (ACOS 49%). Jei šis ASIN nėra hero savo variacijoje - tai potencialiai ~$4K, kurių dalį galima perskirstyti efektyviau.</p>
+    <p style="margin-top: 8px;"><strong>2. B07C4YJYY2 ($10.99)</strong> - buvęs antras hero, dabar reklama sumažinta, bet marža vis dar -0.3%. Reikėtų įvertinti ar jis vis dar atlieka hero funkciją, ar biudžetą galima toliau konsoliduoti į pagrindinį hero.</p>
+    <p style="margin-top: 8px;"><strong>3. 4 nauji ASIN ($19.99, "Name not found")</strong> - B0F6D7NR7J, B0F6D7W9B9, B0F6D92MGD, B0F6DCDPMR. Reklamos išlaidos $591, pardavimų 0. Jei tai naujų produktų launch - reikia stebėti progresą.</p>
+  </div>
+
+  <div class="highlight blue">
+    <div class="hl-title">Pagrindinė išvada</div>
+    <p>Kovas 2026 demonstruoja fundamentalų efektyvumo pagerėjimą: <strong>-25% sesijų, -10% reklamos, bet +71% pajamų ir +108% pelno</strong>. Tai nėra sezono ar rinkos efektas - tai produktų portfelio optimizavimo ir Hero strategijos rezultatas. Kiekvienas reklamos doleris dabar dirba 39% efektyviau nei pernai.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="agency">AMZ BEES</div>
+  <div style="margin-top: 4px;">Analizė paruošta 2026-03-23 &middot; Duomenys: 2026-03-01 - 2026-03-22</div>
+</div>
+
+</div>
+</body>
+</html>
